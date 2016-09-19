@@ -1,0 +1,226 @@
+/*custom css*/
+a:focus { outline: none; }
+body {
+  padding-top: 105px;
+}
+img { max-width: 100%; }
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+.navbar-brand {
+  width: 150px;
+  padding: 0;
+  margin-right: 30px;
+  background-color: #fff;
+}
+.navbar-inverse  {
+  background-image: none;
+  background-color: #798c9d;
+  border: 0;
+  padding: 35px 0 20px 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus, 
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/*Button Bar*/
+.buttonbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.middWrapper {
+  background-color: #f8f9f9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.owners {
+  padding-top: 10px;
+}
+.owners label {
+  line-height: 35px;
+  text-transform: uppercase;
+  font-size: 16px;
+  float: left;
+  margin-right: 10px;
+  color: #95999c;
+}
+.owners select.form-control {
+  float: right;
+  width: 78%;
+}
+.searchWrapper {
+  background-color: #edf0f2; 
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px; 
+  margin-bottom: 10px;
+}
+.searchbar {
+  float: right;
+  padding: 5px 15px 5px 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 40%;
+}
+.searchbar .glyphicon-search {
+  padding: 5px;
+  line-height: 30px;
+  color: #9a9a9b;
+}
+.searchbar .btn {
+  padding: 0;
+  background-color: transparent;
+  float: right;
+}
+
+.searchbar .form-control {
+  float: left;
+  width: 80%;
+  border: 0;
+  box-shadow: none;
+  height: 40px;
+}
+
+/*screening panel*/
+.screeningPanel {
+  border-radius: 6px 6px 3px 3px;
+  overflow: hidden;
+  border-bottom: solid 5px #95999c;
+  margin-right: -10px;
+}
+.screeningPanel .head {
+  background-color: #95999c;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  overflow: hidden;
+  color: #fff;
+}
+.screeningPanel .head small,
+.screeningPanel .head strong {
+  display: block;
+}
+.screeningPanel .head small {
+  font-size: 14px;
+}
+.screeningPanel .head strong {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: normal;
+}
+.screeningPanel .head .glyphicon-cog {
+  line-height: 60px;
+  font-size: 30px;
+  color: #bfc0c1;
+}
+.stageWrapper {
+  background-color: #bedaa9;
+  height: 6px;
+  border-bottom: solid 1px #a8c497;
+}
+.stageWrapper span {
+  float: left;
+  width: 20%;
+  height: 6px;
+  border-right: solid 2px #fff; 
+}
+.stageWrapper span:last-child {
+  border-right: 0;
+}
+.stageWrapper span.active {
+  background-color: #77c045;
+}
+.dealTitle {
+  background-color: #c6c8c9;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.dealListing dl {
+  margin: 0;
+  background-color: #edf0f2;
+  border-bottom: solid 2px #e3e3e5;
+  overflow: hidden;
+}
+.dealListing dl:hover {
+  background-color: #f4f6f7;
+}
+.dealListing dl dt {
+  width: 90%;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.dealListing dl dd {
+  margin-left: 91%;
+  font-size: 40px;
+  line-height: 80px;
+  color: #95999c;
+}
+.dealListing dl small,
+.dealListing dl big {
+  display: block;
+  font-weight: normal;
+}
+.dealListing dl big {
+  color: #5294cf;
+  margin-bottom: 5px;
+}
+.dealListing dl dt label {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  color: #95999c;
+  border: solid 1px #95999c;
+  display: inline-block;
+  margin-right: 5px;
+  line-height: 24px;
+}
+.dealListing dl dt label.accepted {
+  color: #77c045;
+  border-color: #77c045;
+}
+.dealListing dl dt label.diclined {
+  color: #ee1f25;
+  border-color: #ee1f25;
+}
+.dealListing dl dt label.disable {
+  color: #fff;
+  border-color: #fff;
+}
+
+/**/
+.screeningTitleBar {
+  background-color: #77c045;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.screeningTitleBar h2 {
+  margin: 0;
+}
+.notifications a {
+  font-size: 40px;
+  margin-right: 20px;
+  color: #fff;
+}
+.notifications a:last-child {
+  margin-right: 0;
+}
