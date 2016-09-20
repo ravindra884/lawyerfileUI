@@ -96,7 +96,7 @@ img { max-width: 100%; }
   border-radius: 6px 6px 3px 3px;
   overflow: hidden;
   border-bottom: solid 5px #95999c;
-  margin-right: -10px;
+  margin-right: -15px;
 }
 .screeningPanel .head {
   background-color: #95999c;
@@ -223,4 +223,224 @@ img { max-width: 100%; }
 }
 .notifications a:last-child {
   margin-right: 0;
+}
+
+.middPanel {
+  padding-left: 0; 
+}
+.middPanel .nav-tabs {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 0;
+}
+.middPanel .nav-tabs li {
+  background-color: #ebeef0;
+  margin-bottom: 0; 
+}
+.middPanel .nav-tabs li a {
+  color: #000;
+  padding: 15px 16px;
+  text-align: center;
+  border-radius: 0;
+}
+.middPanel .nav-tabs li:hover a {
+  background-color: #fff;
+}
+.middPanel .nav-tabs > li.active > a, 
+.middPanel .nav-tabs > li.active > a:focus, 
+.middPanel .nav-tabs > li.active > a:hover {
+  border: 0;
+}
+.middPanel .innertab {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.middPanel .innertab li {
+  background-color: transparent;
+}
+.middPanel .innertab li a {
+  padding: 5px 24px;
+}
+.middPanel .innertab > li:hover a,
+.middPanel .innertab > li.active > a, 
+.middPanel .innertab > li.active > a:focus, 
+.middPanel .innertab > li.active > a:hover {
+  border-color: #fff;
+  border-bottom: solid 2px #ccc;
+  box-shadow: none;
+}
+
+#client .panel-default > .panel-heading {
+  background-color: #fff;
+  background-image: none;
+  text-transform: uppercase;
+}
+#client .panel-default > .panel-heading a {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: #95989a;
+}
+#client .panel-default > .panel-heading a:hover,
+#client .panel-default > .panel-heading a:focus {
+  text-decoration: none;
+}
+#client .panel-default > .panel-heading a:after {
+  border-bottom: 10px solid #ccc;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 0; 
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #898989;
+}
+#client .panel-default > .panel-heading a.collapsed:after {
+  border-top: 10px solid #ccc;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 0;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #898989;
+}
+#client .panel-default > .panel-heading a:hover {
+  text-decoration: none;
+}
+#client .panel-default > .panel-heading {
+  position: relative;
+}
+#client button.edit {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background-color: transparent;
+  border: 0;
+  color: #898989;
+}
+#client .infolist {
+  margin: 0;
+  padding: 0;
+}
+#client .infolist li {
+  list-style: none;
+  float: left;
+  width: 30%;
+
+  margin: 0 5px 10px; 
+}
+#client .infolist li label {
+  color: #bcbec0;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#client .infolist li span {
+  display: block;
+  color: #2b2b2b;
+  font-size: 18px;
+}
+
+
+/*Right panel*/
+.rightpanel {
+  background-color: #fff;
+  border-radius: 6px;
+  border: solid 1px #eff1f3;
+  height: 450px;
+  overflow-y: auto;
+}
+.recentActivites ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 0;
+  border-left: solid 1px #e2e2e4;
+}
+.recentActivites ul li {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #e2e2e4;
+  color: #95989a;
+  position: relative;
+}
+.recentActivites ul li:before {
+  border-left: 5px solid #e2e2e4;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  content: '';
+}
+.recentActivites ul li h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+  color: #95989a;
+}
+.recentActivites ul li .comments {
+  font-size: 16px;
+}
+.recentActivites ul li .label {
+  width: 26px;
+  height: 26px;
+  border: solid 1px #76c146;
+  color: #76c146;
+  line-height: 18px;
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+  border-radius: 100%;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.recentActivites small {
+  display: block;
+  width: 84%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+.recentActivites small + small {
+  margin-top: -5px;
+}
+
+.maintabs {
+  float: left;
+  padding-left: 50px;
+}
+.maintabs a {
+  color: #b9bad5;
+  position: relative;
+  margin-right: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.maintabs a:hover,
+.maintabs a.active {
+  text-decoration: none;
+  color: #76c146;
+}
+.maintabs a:hover span,
+.maintabs a.active span {
+  text-decoration: none;
+  border-color: #76c146;
+}
+
+.maintabs a span {
+  display: inline-block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #b9bad5;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 28px;
+}
+
+#client .edit.infolist {
+  display: none;
 }
