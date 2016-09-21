@@ -56,9 +56,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="javascript:;" >Deals!</a></li>
+            <li class="active"><a href="index.html" >Deals</a></li>
             <li><a href="javascript:;">Peoples</a></li>
-            <li><a href="javascript:;">Admin</a></li>
+            <li><a href="admin.html">Admin</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -87,15 +87,22 @@
     <div class="container">
       <div class="searchWrapper clearfix">
         <div class="col-lg-4 owners">
+          <label>Stage</label>
+          <select class="form-control ">
+            <option>Screening</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="col-lg-4 owners">
           <label>Owner</label>
           <select class="form-control ">
             <option>All Users</option>
             <option>2</option>
             <option>3</option>
           </select>
-          
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-4">
           <div class="searchbar">
             <button class="btn" type="button"><i aria-hidden="true" class="glyphicon glyphicon-search"></i></button>
             <input type="text" name="search" class="form-control" placeholder="Search...">
@@ -115,11 +122,11 @@
             <i aria-hidden="true" class="glyphicon glyphicon-cog"></i>
           </div>
           <div class="stageWrapper">
-            <span></span>
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <a href="javascript:;"></a>
+            <a href="javascript:;" class="active"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
           </div>
           <h5 class="dealTitle">3 Deals</h5>
           <div class="dealListing">
@@ -163,249 +170,295 @@
           </div>
         </div>
         <div class="col-lg-9">
-          <div class="screeningTitleBar">
-            <div class="col-lg-8">
-              <h2>18P0034 - 101 Arkwright Drive</h2>
-              <span>Closing Date: September 29, 2016 </span>
-            </div>
-            <div class="col-lg-4 notifications">
-              <a href="javascript:;"><i aria-hidden="true" class="fa fa-envelope-o"></i></a>
-              <a href="javascript:;"><i aria-hidden="true" class="fa fa-comments-o"></i></a>
-            </div>
-          </div>
-          <!-- Left panel end-->
-
-          <!-- Midd section -->
-          <div class="col-lg-8 middPanel">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="#folder" aria-controls="folder" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-folder"></i> &nbsp;18P0034</a></li>
-              <li role="presentation" class="active"><a href="#people" aria-controls="people" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-users"></i> &nbsp;People</a></li>
-              <li role="presentation"><a href="#checklist" aria-controls="checklist" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-file-text"></i> &nbsp;Checklist</a></li>
-              <li role="presentation"><a href="#documents" aria-controls="documents" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-files-o"></i> &nbsp;Documents</a></li>
-              <li role="presentation"><a href="#chats" aria-controls="chats" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-comments"></i> &nbsp;chats</a></li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane" id="folder">
-               comming soon...Folder
+         <div class="rightSection">
+            <div class="screeningTitleBar">
+              <div class="col-lg-8">
+                <h2>18P0034 - 101 Arkwright Drive</h2>
+                <span>Closing Date: September 29, 2016 </span>
               </div>
+              <div class="col-lg-4 notifications">
+                <a href="javascript:;" class="message"><i aria-hidden="true" class="fa fa-envelope-o"></i></a>
+                <a href="javascript:;" class="alignment"><i aria-hidden="true" class="fa fa-align-left"></i></a>
+              </div>
+            </div>
+            <!-- Left panel end-->
 
-              <div role="tabpanel" class="tab-pane active" id="people">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs innertab" role="tablist">
-                  <li role="presentation" class="active"><a href="#client" aria-controls="client" role="tab" data-toggle="tab">Client(s)</a></li>
-                  <li role="presentation" ><a href="#realtor" aria-controls="realtor" role="tab" data-toggle="tab">Realtor</a></li>
-                  <li role="presentation"><a href="#agent" aria-controls="agent" role="tab" data-toggle="tab">Mortgage Agent</a></li>
-                  <li role="presentation"><a href="#firm" aria-controls="firm" role="tab" data-toggle="tab">Cooperating Low Firm</a></li>
-                </ul>
+            <!-- Midd section -->
+            <div class="col-lg-8 middPanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#folder" aria-controls="folder" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-folder"></i> &nbsp;18P0034</a></li>
+                <li role="presentation" class="active"><a href="#people" aria-controls="people" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-users"></i> &nbsp;People</a></li>
+                <li role="presentation"><a href="#checklist" aria-controls="checklist" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-file-text"></i> &nbsp;Checklist</a></li>
+                <li role="presentation"><a href="#documents" aria-controls="documents" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-files-o"></i> &nbsp;Documents</a></li>
+                <li role="presentation"><a href="#chats" aria-controls="chats" role="tab" data-toggle="tab"><i aria-hidden="true" class="fa fa-comments"></i> &nbsp;chats</a></li>
+              </ul>
 
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="client">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                          <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Seller 1/2 
-                            </a>
-                            <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
-                          </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                          <div class="panel-body">
-                            <ul class="view infolist">
-                              <li>
-                                <label>First Name</label>
-                                <span>Singaravelan</span>
-                              </li>
-                              <li>
-                                <label>Middle Name</label>
-                                <span>Nadupeyar</span>
-                              </li>
-                              <li>
-                                <label>Last Name</label>
-                                <span>Lankeswaranaar</span>
-                              </li>
-                              <li>
-                                <label>Phone Number</label>
-                                <span>41612345678 </span>
-                              </li>
-                              <li>
-                                <label>Mobile</label>
-                                <span>41612345678 </span>
-                              </li>
-                              <li>
-                                <label>&nbsp;</label>
-                                <span>&nbsp;</span>
-                              </li>
-                              <li>
-                                <label>Email</label>
-                                <span>sing@gmail.com</span>
-                              </li>
-                              <li>
-                                <label>Date of birth</label>
-                                <span>1979-04-12</span>
-                              </li>
-                              <li>
-                                <label>Marital Status</label>
-                                <span>Unmarried</span>
-                              </li>
-                            </ul>
-                            <ul class="edit infolist">
-                              <li>
-                                <label>First Name</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Middle Name</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Last Name</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Phone Number</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Mobile</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                             
-                              <li>
-                                <label>Email</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Date of birth</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                              <li>
-                                <label>Marital Status</label>
-                                <span><input type="text" class="form-control" name=""></span>
-                              </li>
-                            </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="folder">
+                 comming soon...Folder
+                </div>
+
+                <div role="tabpanel" class="tab-pane active" id="people">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs innertab" role="tablist">
+                    <li role="presentation" class="active"><a href="#client" aria-controls="client" role="tab" data-toggle="tab">Client(s)</a></li>
+                    <li role="presentation" ><a href="#realtor" aria-controls="realtor" role="tab" data-toggle="tab">Realtor</a></li>
+                    <li role="presentation"><a href="#agent" aria-controls="agent" role="tab" data-toggle="tab">Mortgage Agent</a></li>
+                    <li role="presentation"><a href="#firm" aria-controls="firm" role="tab" data-toggle="tab">Cooperating Low Firm</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="client">
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Seller 1/2 
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <ul class="view infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                                <li>
+                                  <label>Phone Number</label>
+                                  <span>41612345678 </span>
+                                </li>
+                                <li>
+                                  <label>Mobile</label>
+                                  <span>41612345678 </span>
+                                </li>
+                                <li>
+                                  <label>&nbsp;</label>
+                                  <span>&nbsp;</span>
+                                </li>
+                                <li>
+                                  <label>Email</label>
+                                  <span>sing@gmail.com</span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span>1979-04-12</span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span>Unmarried</span>
+                                </li>
+                              </ul>
+                              <ul class="edit infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Phone Number</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Mobile</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                               
+                                <li>
+                                  <label>Email</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <div class="buttonWrapper">
+                                  <input type="button" name="" value="cancel" class="btn btn-default">
+                                  <input type="button" name="" value="save" class="btn btn-success">
+                                </div>
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Seller 2/2
-                            </a>
-                            <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
-                          </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                          <div class="panel-body">
-                           <ul class="infolist">
-                              <li>
-                                <label>First Name</label>
-                                <span>Singaravelan</span>
-                              </li>
-                              <li>
-                                <label>Middle Name</label>
-                                <span>Nadupeyar</span>
-                              </li>
-                              <li>
-                                <label>Last Name</label>
-                                <span>Lankeswaranaar</span>
-                              </li>
-                            </ul>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Seller 2/2
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                             <ul class="infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
+                     </div>
+                    </div>
+
+                   <div role="tabpanel" class="tab-pane" id="realtor">
+                      comming soon...realtor
+                    </div>
+                   <div role="tabpanel" class="tab-pane" id="agent">
+                     comming soon...agent
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="firm">
+                     comming soon...firm
+                    </div>
+                  </div>
+                </div>
+
+
+               
+
+                <div role="tabpanel" class="tab-pane" id="checklist">
+                 <div class="viewWrapper clearfix">
+                   <select class="form-control">
+                    <option>Show all</option>
+                    <option>--------</option>
+                    <option>--------</option>
+                   </select>
+                   <div class="changeviewBar">
+                     <div aria-label="Default button group" role="group" class="btn-group"> 
+                     <button class="btn btn-default listview" type="button"><i aria-hidden="true" class="fa fa-align-left"></i></button>
+                     <button class="btn btn-default gridview" type="button"><i aria-hidden="true" class="fa fa-list"></i></button>
                       </div>
                    </div>
                   </div>
+                 <div class="checkboxlist clearfix">
+                   <div class="checkbox">
+                     <input type="checkbox" name="" id="checkboxOff">
+                     <label for="checkboxOff">Checkbox off</label>
+                   </div>
+                   <div class="checkbox">
+                     <input type="checkbox" name="" id="checkboxOn">
+                     <label for="checkboxOn">Checkbox On</label>
+                   </div>
+                   <div class="checkbox disabled">
+                     <input type="checkbox" name="" id="checkboxDisable">
+                     <label for="checkboxDisable">Checkbox Disabled</label>
+                   </div>
+                    <div class="checkbox">
+                     <input type="checkbox" name="" id="checkboxOff">
+                     <label for="checkboxOff">Checkbox off</label>
+                   </div>
+                   <div class="checkbox">
+                     <input type="checkbox" name="" id="checkboxOn">
+                     <label for="checkboxOn">Checkbox On</label>
+                   </div>
+                   <div class="checkbox disabled">
+                     <input type="checkbox" name="" id="checkboxDisable">
+                     <label for="checkboxDisable">Checkbox Disabled</label>
+                   </div>
+                 </div>
 
-                 <div role="tabpanel" class="tab-pane" id="realtor">
-                    comming soon...realtor
-                  </div>
-                 <div role="tabpanel" class="tab-pane" id="agent">
-                   comming soon...agent
-                  </div>
-                  <div role="tabpanel" class="tab-pane" id="firm">
-                   comming soon...firm
-                  </div>
+                
                 </div>
+                <div role="tabpanel" class="tab-pane" id="documents">
+                  comming soon...Documents
+                </div>
+               <div role="tabpanel" class="tab-pane" id="chats">
+                 comming soon...chats
+                </div>
+               
               </div>
-
-
-             
-
-              <div role="tabpanel" class="tab-pane" id="checklist">
-               comming soon...checklist
-              </div>
-              <div role="tabpanel" class="tab-pane" id="documents">
-                comming soon...Documents
-              </div>
-             <div role="tabpanel" class="tab-pane" id="chats">
-               comming soon...chats
-              </div>
-             
             </div>
-          </div>
-          <!-- Midd section end -->
+            <!-- Midd section end -->
 
-          <!-- Right Panel -->
-          <div class="col-lg-4 rightpanel">
-            <div class="recentActivites">
-              <h4>Recent Activities</h4>
-              <div class="form-group">
-                <select class="form-control ">
-                  <option>All Activities</option>
-                  <option>--------------</option>
-                  <option>--------------</option>
-                </select>
+            <!-- Right Panel -->
+            <div class="col-lg-4 rightpanel">
+              <div class="recentActivites">
+                <h4>Recent Activities</h4>
+                <div class="form-group">
+                  <select class="form-control ">
+                    <option>All Activities</option>
+                    <option>--------------</option>
+                    <option>--------------</option>
+                  </select>
+                </div>
+
+                <ul>
+                  <li>
+                    <h5>Deal Updated</h5>
+                    <div class="comments">
+                      APS document added
+                    </div>
+                    <div class="label">R</div>
+                    <small>Sri Lankes</small>
+                    <small>Sep 14, 2016 at 12:30R </small>
+                  </li>
+                  <li>
+                    <h5>Deal Updated</h5>
+                    <div class="comments">
+                      Changed Stage to Title Search 
+                    </div>
+                    <div class="label">L</div>
+                    <small>Sri Lankes</small>
+                    <small>Sep 14, 2016 at 12:30R </small>
+                  </li>
+                  <li>
+                    <h5>Note Added</h5>
+                    <div class="comments">
+                      APS document added
+                    </div>
+                    <div class="label">R</div>
+                    <small>Sri Lankes</small>
+                    <small>Sep 14, 2016 at 12:30R </small>
+                  </li>
+                  <li>
+                    <h5>Deal Updated</h5>
+                    <div class="comments">
+                      APS document added
+                    </div>
+                    <div class="label">L</div>
+                    <small>Sri Lankes</small>
+                    <small>Sep 14, 2016 at 12:30R </small>
+                  </li>
+                </ul>
+
               </div>
-
-              <ul>
-                <li>
-                  <h5>Deal Updated</h5>
-                  <div class="comments">
-                    APS document added
-                  </div>
-                  <div class="label">R</div>
-                  <small>Sri Lankes</small>
-                  <small>Sep 14, 2016 at 12:30R </small>
-                </li>
-                <li>
-                  <h5>Deal Updated</h5>
-                  <div class="comments">
-                    Changed Stage to Title Search 
-                  </div>
-                  <div class="label">L</div>
-                  <small>Sri Lankes</small>
-                  <small>Sep 14, 2016 at 12:30R </small>
-                </li>
-                <li>
-                  <h5>Note Added</h5>
-                  <div class="comments">
-                    APS document added
-                  </div>
-                  <div class="label">R</div>
-                  <small>Sri Lankes</small>
-                  <small>Sep 14, 2016 at 12:30R </small>
-                </li>
-                <li>
-                  <h5>Deal Updated</h5>
-                  <div class="comments">
-                    APS document added
-                  </div>
-                  <div class="label">L</div>
-                  <small>Sri Lankes</small>
-                  <small>Sep 14, 2016 at 12:30R </small>
-                </li>
-              </ul>
-
+              
             </div>
-            
-          </div>
-          <!-- Right Panel end -->
+            <!-- Right Panel end -->
+          </div>    
         </div>
       </div>
     </div>
