@@ -76,7 +76,7 @@
             <a href="javascript:;"><span>M</span>Mortgage</a>
             <a href="javascript:;"><span>T</span>Title transfer</a>
           </div>
-          <button class="btn btn-lg btn-success" type="button">+ New</button>
+          <button class="btn btn-lg btn-success newDeail" type="button">+ New Deal</button>
         </div>
       </div>
   </section>
@@ -122,11 +122,11 @@
             <i aria-hidden="true" class="glyphicon glyphicon-cog"></i>
           </div>
           <div class="stageWrapper">
-            <a href="javascript:;"></a>
-            <a href="javascript:;" class="active"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
+            <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="New Deal"></a>
+            <a href="javascript:;" class="active" data-toggle="tooltip" data-placement="top" title="Screening"></a>
+            <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Title Search"></a>
+            <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Closing"></a>
+            <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Post Closing"></a>
           </div>
           <h5 class="dealTitle">3 Deals</h5>
           <div class="dealListing">
@@ -236,18 +236,15 @@
                                   <label>Last Name</label>
                                   <span>Lankeswaranaar</span>
                                 </li>
-                                <li>
-                                  <label>Phone Number</label>
-                                  <span>41612345678 </span>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Mobile</small></span>
                                 </li>
-                                <li>
-                                  <label>Mobile</label>
-                                  <span>41612345678 </span>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Work</small></span>
                                 </li>
-                                <li>
-                                  <label>&nbsp;</label>
-                                  <span>&nbsp;</span>
-                                </li>
+                                <div class="addmore clearfix"><a href="javascript:;">+add one more</a></div>
                                 <li>
                                   <label>Email</label>
                                   <span>sing@gmail.com</span>
@@ -274,13 +271,25 @@
                                   <label>Last Name</label>
                                   <span><input type="text" class="form-control" name=""></span>
                                 </li>
-                                <li>
-                                  <label>Phone Number</label>
-                                  <span><input type="text" class="form-control" name=""></span>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Mobile</option>
+                                      <option>Work</option>
+                                    </select>
+                                  </span>
                                 </li>
-                                <li>
-                                  <label>Mobile</label>
-                                  <span><input type="text" class="form-control" name=""></span>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Work</option>
+                                      <option>Mobile</option>
+                                    </select>
+                                  </span>
                                 </li>
                                
                                 <li>
@@ -295,9 +304,9 @@
                                   <label>Marital Status</label>
                                   <span><input type="text" class="form-control" name=""></span>
                                 </li>
-                                <div class="buttonWrapper">
-                                  <input type="button" name="" value="cancel" class="btn btn-default">
-                                  <input type="button" name="" value="save" class="btn btn-success">
+                                <div class="buttonWrapper clearfix">
+                                  <input type="button" name="" value="cancel" class="btn btn-default cancelBtn">
+                                  <input type="button" name="" value="save" class="btn btn-success saveBtn">
                                 </div>
                               </ul>
                             </div>
@@ -331,17 +340,404 @@
                             </div>
                           </div>
                         </div>
-                     </div>
+                      </div>
                     </div>
 
                    <div role="tabpanel" class="tab-pane" id="realtor">
-                      comming soon...realtor
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Seller 1/2 
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <ul class="view infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Mobile</small></span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Work</small></span>
+                                </li>
+                                <div class="addmore clearfix"><a href="javascript:;">+add one more</a></div>
+                                <li>
+                                  <label>Email</label>
+                                  <span>sing@gmail.com</span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span>1979-04-12</span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span>Unmarried</span>
+                                </li>
+                              </ul>
+                              <ul class="edit infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Mobile</option>
+                                      <option>Work</option>
+                                    </select>
+                                  </span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Work</option>
+                                      <option>Mobile</option>
+                                    </select>
+                                  </span>
+                                </li>
+                               
+                                <li>
+                                  <label>Email</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <div class="buttonWrapper clearfix">
+                                  <input type="button" name="" value="cancel" class="btn btn-default cancelBtn">
+                                  <input type="button" name="" value="save" class="btn btn-success saveBtn">
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Seller 2/2
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                             <ul class="infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                    <div role="tabpanel" class="tab-pane" id="agent">
-                     comming soon...agent
+                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Seller 1/2 
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <ul class="view infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Mobile</small></span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Work</small></span>
+                                </li>
+                                <div class="addmore clearfix"><a href="javascript:;">+add one more</a></div>
+                                <li>
+                                  <label>Email</label>
+                                  <span>sing@gmail.com</span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span>1979-04-12</span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span>Unmarried</span>
+                                </li>
+                              </ul>
+                              <ul class="edit infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Mobile</option>
+                                      <option>Work</option>
+                                    </select>
+                                  </span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Work</option>
+                                      <option>Mobile</option>
+                                    </select>
+                                  </span>
+                                </li>
+                               
+                                <li>
+                                  <label>Email</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <div class="buttonWrapper clearfix">
+                                  <input type="button" name="" value="cancel" class="btn btn-default cancelBtn">
+                                  <input type="button" name="" value="save" class="btn btn-success saveBtn">
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Seller 2/2
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                             <ul class="infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="firm">
-                     comming soon...firm
+                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Seller 1/2 
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              <ul class="view infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Mobile</small></span>
+                                </li>
+                                <li class="halfwidth">
+                                  <label>Phone</label>
+                                  <span>41612345678 <small>Work</small></span>
+                                </li>
+                                <div class="addmore clearfix"><a href="javascript:;">+add one more</a></div>
+                                <li>
+                                  <label>Email</label>
+                                  <span>sing@gmail.com</span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span>1979-04-12</span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span>Unmarried</span>
+                                </li>
+                              </ul>
+                              <ul class="edit infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Mobile</option>
+                                      <option>Work</option>
+                                    </select>
+                                  </span>
+                                </li>
+                                <li class="halfwidth phoneNumber">
+                                  <label>Phone</label>
+                                  <span>
+                                    <input type="text" class="form-control" name="">
+                                    <select class="form-control">
+                                      <option>Work</option>
+                                      <option>Mobile</option>
+                                    </select>
+                                  </span>
+                                </li>
+                               
+                                <li>
+                                  <label>Email</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Date of birth</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <li>
+                                  <label>Marital Status</label>
+                                  <span><input type="text" class="form-control" name=""></span>
+                                </li>
+                                <div class="buttonWrapper clearfix">
+                                  <input type="button" name="" value="cancel" class="btn btn-default cancelBtn">
+                                  <input type="button" name="" value="save" class="btn btn-success saveBtn">
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Seller 2/2
+                              </a>
+                              <button class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></button>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                             <ul class="infolist">
+                                <li>
+                                  <label>First Name</label>
+                                  <span>Singaravelan</span>
+                                </li>
+                                <li>
+                                  <label>Middle Name</label>
+                                  <span>Nadupeyar</span>
+                                </li>
+                                <li>
+                                  <label>Last Name</label>
+                                  <span>Lankeswaranaar</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -465,10 +861,150 @@
   </section>
   <!-- midd section -->
 
+
+  <!-- multistep form -->
+  <div class="blackoverlay"></div>
+  <form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Deal Info</li>
+      <li>Purchaser</li>
+      <li>Real State Agent</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Deal Info</h2>
+      <!-- <h3 class="fs-subtitle">This is step 1</h3> -->
+      <input type="text" name="" placeholder="Deal Number" />
+      <input type="text" name="" placeholder="Type of Transaction" />
+      <input type="text" name="" placeholder="Property Address" />
+      <input type="text" name="" placeholder="Street Name" class="inputSmall" />
+      <input type="text" name="" placeholder="City" class="inputSmall"/>
+      <input type="text" name="" placeholder="Province" class="inputSmall"/>
+      <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
+      <input type="text" name="" placeholder="Closing Date DD/MM/YYY" />
+      
+
+      <div class="form-group clearfix">
+        <span>First Time Buyer</span>
+        <div class="radio-inline">
+          <input type="radio" name="optionsRadios" id="yes" value="option1"> 
+          <label for="yes">yes</label> 
+        </div>
+        <div class="radio-inline">
+          <input type="radio" name="optionsRadios" id="no" value="option2"> 
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <select class="inputSmall">
+        <option value="1">Type of Ownership</option>
+        <option value="2">Joint Tenancy</option>
+        <option value="3">Tenancy in common</option>
+      </select>
+
+      <select class="inputSmall">
+        <option value="1">Property Type</option>
+        <option value="2">Investment</option>
+        <option value="3">Matrimonial Home</option>
+      </select>
+      
+       <div class="form-group clearfix">
+        <span>Urgent Deal</span>
+        <div class="checkbox-inline">
+          <input type="checkbox" name="" id="urgent_deal" value=""> 
+          <label for="urgent_deal"></label> 
+        </div>
+        
+      </div>
+
+     <input type="button" name="" class="next action-button" value="Next" />
+      
+    </fieldset>
+
+
+    <fieldset>
+      <h2 class="fs-title">Purchaser </h2>
+      <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="First Name" class="inputexSmall" />
+        <input type="text" name="middlename" placeholder="Middle Name" class="inputexSmall"/>
+        <input type="text" name="lastname" placeholder="Last Name" class="inputexSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="dateofbirth" placeholder="Date Of borth" class="inputSmall"/>
+        <input type="text" name="email" placeholder="Email" class="inputSmall"/>
+      </div>
+      <input type="text" name="phonenumber" placeholder="Phone Number" class=""/>
+
+      <a href="javascript:;" class="addMore">+ Add More Numbers</a>
+
+      <input type="text" name="" placeholder="Current Address" />
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Street Name" class="inputSmall" />
+        <input type="text" name="" placeholder="City" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Province" class="inputSmall"/>
+        <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
+      </div>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Real Estate Agent</h2>
+      <!-- <h3 class="fs-subtitle">We will never sell it</h3> -->
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="First Name" class="inputexSmall" />
+        <input type="text" name="middlename" placeholder="Middle Name" class="inputexSmall"/>
+        <input type="text" name="lastname" placeholder="Last Name" class="inputexSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number#1" class="inputSmall"/>
+        <input type="text" name="" placeholder="Phone Number#2" class="inputSmall"/>
+      </div>
+      <h2 class="fs-title">Real Estate Brokerage</h2>
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="Brokerage Name" class="" />
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Street Name" class="inputSmall" />
+        <input type="text" name="" placeholder="City" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Province" class="inputSmall"/>
+        <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number" class="inputSmall"/>
+        <input type="text" name="" placeholder="Fax Number" class="inputSmall"/>
+      </div>
+      <h2 class="fs-title">Mortgage Agent</h2>
+       <div class="form-group clearfix">
+        <input type="text" name="firstname" placeholder="First Name" class="inputSmall" />
+        <input type="text" name="lastname" placeholder="Last Name" class="inputSmall"/>
+      </div>
+       <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number#1" class="inputSmall"/>
+        <input type="text" name="" placeholder="Phone Number#2" class="inputSmall"/>
+      </div>
+
+
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="submit" class="submit action-button" value="Submit" />
+    </fieldset>
+  </form>
+
+
+
+
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
    
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
