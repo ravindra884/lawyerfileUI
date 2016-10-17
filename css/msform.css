@@ -17,7 +17,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 10%;
+  top: 40px;
   height: auto;
   display: none;
   z-index: 1200;
@@ -29,9 +29,10 @@
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
-  width: 80%;
-  margin: 0 10%;
-  
+  width: 100%;
+  margin: 0 20px;
+  height: 500px;
+  overflow-y: auto;
   /*stacking fieldsets above each other*/
   position: absolute;
 }
@@ -44,12 +45,13 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   width: 100%;
   box-sizing: border-box;
   color: #2C3E50;
   font-size: 13px;
   resize: none;
+  height: 40px;
 }
 #msform .inputSmall {
   width: 49%;
@@ -173,4 +175,15 @@
 }
 #msform .form-group input {
   margin-bottom: 0;
+}
+.error {
+  text-align: left;
+  color: red;
+  margin:0;
+  font-size: 12px;
+  padding-top: 2px;
+}
+#msform input[type="checkbox"],
+#msform input[type="radio"] {
+  height: auto;
 }

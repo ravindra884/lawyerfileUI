@@ -35,6 +35,30 @@ $(document).ready(function(){
 	$('.newDeail').click(function() {
 		$('.blackoverlay, #msform').fadeIn();
 	});
+
+
+	$('.menu a').click(function() {
+		$('.menu').slideUp();
+	});
+	// main toggle menu
+	$('.navbar-brand').click(function() {
+		$('.menu').slideToggle();
+	});
+	
+
+	$(".menu").on('click' , 'a#purchase' , function(){
+	    $('.navbar-header .maintabs span').replaceWith('<span><i>P</i>Purchase</span>');
+    });
+    $(".menu").on('click' , 'a#sale' , function(){
+	    $('.navbar-header .maintabs span').replaceWith('<span><i>S</i>Sale</span>');
+    });
+    $(".menu").on('click' , 'a#mortgage' , function(){
+	    $('.navbar-header .maintabs span').replaceWith('<span><i>M</i>Mortgage</span>');
+    });
+    $(".menu").on('click' , 'a#transfer' , function(){
+	    $('.navbar-header .maintabs span').replaceWith('<span><i>T</i>Title transfer</span>');
+    });
+
 });
 
 

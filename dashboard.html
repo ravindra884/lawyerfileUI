@@ -52,73 +52,104 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html" class="navbar-brand"><img alt="" src=""></a>
+          <a href="javascript:;" class="navbar-brand">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="maintabs">
+            <a href="javascript:;" class="purchase active"><span><i>P</i>Purchase</span></a>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbar">
+       <!--  <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="dashboard.html" >Dashboard</a></li>
             <li><a href="index.html" >Deals</a></li>
             <li><a href="javascript:;">Peoples</a></li>
             <li><a href="admin.html">Admin</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div> --><!--/.nav-collapse -->
+        <div class="dropdown profileMenu">
+          <a id="dLabel" data-target="#" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="avatar"><img src="img/avatar.jpg" alt="img/avatar.jpg"></i>
+            <span>
+              <small>FirstName</small>
+              <strong>LongLastName </strong>  
+            </span>            
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li class="active"><a href="dashboard.html" >Dashboard</a></li>
+            <li><a href="index.html" >Deals</a></li>
+            <li><a href="javascript:;">Peoples</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+
+        <div class="maintabs menu">
+            <a href="javascript:;" class="purchase" id="purchase"><span><i>P</i>Purchase</span></a>
+            <a href="javascript:;" class="sale" id="sale"><span><i>S</i>Sale</span></a>
+            <a href="javascript:;" class="mortgage" id="mortgage"><span><i>M</i>Mortgage</span></a>
+            <a href="javascript:;" class="transfer" id="transfer"><span><i>T</i>Title transfer</span></a>
+        </div>
+
       </div>
     </nav>
   </header>  
   <!-- Header end-->
    
-  <!-- Button bar  -->
-  <section class="wrapper">
-      <div class="container">
-        <div class="buttonbar">
-          <div class="maintabs">
-            <a href="javascript:;" class="active"><span>P</span>Purchase</a>
-            <a href="javascript:;"><span>S</span>Sale</a>
-            <a href="javascript:;"><span>M</span>Mortgage</a>
-            <a href="javascript:;"><span>T</span>Title transfer</a>
-          </div>
-          <button class="btn btn-lg btn-success newDeail" type="button">+ New Deal</button>
-        </div>
-      </div>
-  </section>
-  <!-- Button bar  -->
 
   <!-- midd section -->
   <section class="wrapper middWrapper">
     <div class="container">
       <div class="searchWrapper clearfix">
-        <div class="col-lg-4 owners">
-          <label>Stage</label>
+        <div class="col-lg-4">
+          <!-- <label>Stage</label>
           <select class="form-control ">
             <option>Screening</option>
             <option>2</option>
             <option>3</option>
-          </select>
+          </select> -->
+          <div class="owners">
+            <label>Owner</label>
+            <select class="form-control ">
+              <option>All Users</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
         </div>
-        <div class="col-lg-4 owners">
-          <label>Owner</label>
-          <select class="form-control ">
-            <option>All Users</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+        <div class="col-lg-2">
+          &nbsp;
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
+          <div class="newDeailbtn">
+            <button class="btn btn-lg btn-success newDeail" type="button">+ New Deal</button>
+          </div>
           <div class="searchbar">
             <button class="btn" type="button"><i aria-hidden="true" class="glyphicon glyphicon-search"></i></button>
             <input type="text" name="search" class="form-control" placeholder="Search...">
           </div>
         </div>
+        
       </div>
 
       <div class="addDealsWrapper">
         <div class="overflowWrapper">
           <div class="screeningPanel">
-            <div class="head">
+            <div class="head clearfix">
               <div class="col-sm-10">
                 <strong>Screening</strong>
               </div>
-              <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
             </div>
            
             <h5 class="dealTitle">3 Deals</h5>
@@ -163,11 +194,19 @@
             <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
           </div>
           <div class="screeningPanel">
-            <div class="head">
+            <div class="head clearfix">
               <div class="col-sm-10">
                 <strong>New Deal</strong>
               </div>
-              <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
             </div>
            
             <h5 class="dealTitle">4 Deals</h5>
@@ -224,11 +263,19 @@
             <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
           </div>
           <div class="screeningPanel">
-            <div class="head">
+            <div class="head clearfix">
               <div class="col-sm-10">
                 <strong>New Title</strong>
               </div>
-              <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
             </div>
            
             <h5 class="dealTitle">2 Deals</h5>
@@ -262,11 +309,211 @@
             <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
           </div>
           <div class="screeningPanel">
-            <div class="head">
+            <div class="head clearfix">
               <div class="col-sm-10">
                 <strong>Pending Payout</strong>
               </div>
-              <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
+            </div>
+            <h5 class="dealTitle">0 Deals</h5>
+            <div class="dealListing">
+            </div>
+            <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
+          </div>
+          <div class="screeningPanel">
+            <div class="head clearfix">
+              <div class="col-sm-10">
+                <strong>Screening</strong>
+              </div>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
+            </div>
+           
+            <h5 class="dealTitle">3 Deals</h5>
+            <div class="dealListing">
+              <dl>
+                <dt>
+                  <small>18P0034 - screening 2/6</small>
+                  <big>101 Arkwright Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>15 Commuter Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>45 Locomotive Crescent</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+            </div>
+            <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
+          </div>
+          <div class="screeningPanel">
+            <div class="head clearfix">
+              <div class="col-sm-10">
+                <strong>New Deal</strong>
+              </div>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
+            </div>
+           
+            <h5 class="dealTitle">4 Deals</h5>
+            <div class="dealListing">
+              <dl>
+                <dt>
+                  <small>18P0034 - screening 2/6</small>
+                  <big>101 Arkwright Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>15 Commuter Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+               <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>15 Commuter Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>45 Locomotive Crescent</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+            </div>
+            <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
+          </div>
+          <div class="screeningPanel">
+            <div class="head clearfix">
+              <div class="col-sm-10">
+                <strong>New Title</strong>
+              </div>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
+            </div>
+           
+            <h5 class="dealTitle">2 Deals</h5>
+            <div class="dealListing">
+              <dl>
+                <dt>
+                  <small>18P0034 - screening 2/6</small>
+                  <big>101 Arkwright Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <small>18P0034</small>
+                  <big>15 Commuter Drive</big>
+                  <label class="disable">C</label>
+                  <label class="disable">R</label>
+                  <label class="disable">M</label>
+                </dt>
+                <dd>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </dd>
+              </dl>
+             
+            </div>
+            <a class="footer" href="javascript:;"><i aria-hidden="true" class="fa fa-plus-circle"></i> Add Deal</a>
+          </div>
+          <div class="screeningPanel">
+            <div class="head clearfix">
+              <div class="col-sm-10">
+                <strong>Pending Payout</strong>
+              </div>
+              <div class="setting">
+              <i aria-hidden="true" class="glyphicon glyphicon-cog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="javascript:;">lorem </a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                  <li><a href="javascript:;">lorem</a></li>
+                  <li><a href="javascript:;">lorem ipsum</a></li>
+                </ul>
+            </div>
             </div>
             <h5 class="dealTitle">0 Deals</h5>
             <div class="dealListing">
@@ -293,15 +540,37 @@
     <fieldset>
       <h2 class="fs-title">Deal Info</h2>
       <!-- <h3 class="fs-subtitle">This is step 1</h3> -->
-      <input type="text" name="" placeholder="Deal Number" />
-      <input type="text" name="" placeholder="Type of Transaction" />
-      <input type="text" name="" placeholder="Property Address" />
-      <input type="text" name="" placeholder="Street Name" class="inputSmall" />
-      <input type="text" name="" placeholder="City" class="inputSmall"/>
-      <input type="text" name="" placeholder="Province" class="inputSmall"/>
-      <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
-      <input type="text" name="" placeholder="Closing Date DD/MM/YYY" />
-      
+      <div class="form-group">
+        <input type="text" name="" placeholder="Deal Number" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Type of Transaction" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Property Address" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Street Name" class="" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+      <input type="text" name="" placeholder="City" class=""/>
+      <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Province" class=""/>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Postal Code" class=""/>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Closing Date DD/MM/YYY" />
+      </div>
 
       <div class="form-group clearfix">
         <span>First Time Buyer</span>
@@ -315,18 +584,24 @@
         </div>
       </div>
 
-      <select class="inputSmall">
-        <option value="1">Type of Ownership</option>
-        <option value="2">Joint Tenancy</option>
-        <option value="3">Tenancy in common</option>
-      </select>
+      <div class="form-group inputSmall">
+        <select class="">
+          <option value="1">Type of Ownership</option>
+          <option value="2">Joint Tenancy</option>
+          <option value="3">Tenancy in common</option>
+        </select>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
 
-      <select class="inputSmall">
-        <option value="1">Property Type</option>
-        <option value="2">Investment</option>
-        <option value="3">Matrimonial Home</option>
-      </select>
-      
+      <div class="form-group inputSmall">
+        <select class="">
+          <option value="1">Property Type</option>
+          <option value="2">Investment</option>
+          <option value="3">Matrimonial Home</option>
+        </select>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+
        <div class="form-group clearfix">
         <span>Urgent Deal</span>
         <div class="checkbox-inline">

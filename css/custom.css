@@ -10,10 +10,16 @@ img { max-width: 100%; }
   margin-left: 0;
 }
 .navbar-brand {
-  width: 150px;
-  padding: 0;
-  margin-right: 30px;
-  background-color: #fff;
+  padding: 12px 0 0;
+  width: 35px;
+  height: auto;
+}
+.navbar-brand span {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 8px;
+  background: #fff;
+  display: block;
 }
 .navbar-inverse  {
   background-image: none;
@@ -33,7 +39,41 @@ img { max-width: 100%; }
   box-shadow: none;
   text-shadow: none;
 }
-
+.profileMenu {
+  float: right;
+}
+.profileMenu .avatar {
+  width: 52px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 10px;
+  background: #f4f6fa; 
+  float: left;
+  line-height: 45px;
+  text-align: center;
+}
+.profileMenu a {
+  color: #fff;
+}
+.profileMenu span {
+  float: left;
+  padding-top: 5px;
+  position: relative;
+  padding-right: 30px;
+}
+.profileMenu span:after {
+  border-top: solid 7px #fff;
+  border-left: solid 6px transparent;
+  border-right: solid 6px transparent;
+  position: absolute;
+  top: 48%;
+  right: 0;
+  content: '';
+}
+.profileMenu span small {
+  display: block;
+}
 /*Button Bar*/
 .buttonbar {
   padding-top: 10px;
@@ -47,6 +87,7 @@ img { max-width: 100%; }
 }
 .owners {
   padding-top: 10px;
+  overflow: hidden;
 }
 .owners label {
   line-height: 35px;
@@ -72,7 +113,7 @@ img { max-width: 100%; }
   padding: 5px 15px 5px 10px;
   background-color: #fff;
   border-radius: 4px;
-  width: 90%;
+  width: 60%;
 }
 .searchbar .glyphicon-search {
   padding: 5px;
@@ -100,11 +141,15 @@ img { max-width: 100%; }
   border-bottom: solid 5px #95999c;
   margin-right: -15px;
 }
+.screeningPanel .dealListing {
+  height: 310px;
+  overflow-y: auto;
+  background-color: #edf0f2;
+}
 .screeningPanel .head {
   background-color: #95999c;
   padding-top: 10px;
   padding-bottom: 10px; 
-  overflow: hidden;
   color: #fff;
 }
 .screeningPanel .head small,
@@ -113,16 +158,28 @@ img { max-width: 100%; }
 }
 .screeningPanel .head small {
   font-size: 14px;
+  cursor: pointer;
 }
 .screeningPanel .head strong {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: normal;
 }
-.screeningPanel .head .glyphicon-cog {
-  line-height: 60px;
+.screeningPanel .setting {
+  float: right;
+  position: relative;
   font-size: 30px;
   color: #bfc0c1;
+  padding-right: 10px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.screeningPanel .setting .dropdown-menu {
+  left: auto;
+  right: 5px;
+}
+.screeningPanel .setting:hover {
+  color: #fff;
 }
 .stageWrapper {
   background-color: #bedaa9;
@@ -142,6 +199,9 @@ img { max-width: 100%; }
 .stageWrapper a:hover,
 .stageWrapper a:focus {
   background-color: #77c045;
+}
+.stageWrapper .tooltip {
+  font-size: 10px;
 }
 .dealTitle {
   background-color: #c6c8c9;
@@ -396,8 +456,6 @@ img { max-width: 100%; }
   background-color: #fff;
   border-radius: 6px;
   border: solid 1px #eff1f3;
-  height: 450px;
-  overflow-y: auto;
   transition: all 0.3s ease-in-out;
 }
 .recentActivites ul {
@@ -405,6 +463,8 @@ img { max-width: 100%; }
   padding: 0 0 0 20px;
   margin: 0;
   border-left: solid 1px #e2e2e4;
+  height: 310px;
+  overflow-y: auto;
 }
 .recentActivites ul li {
   padding-bottom: 5px;
@@ -458,6 +518,8 @@ img { max-width: 100%; }
 .maintabs {
   float: left;
   padding-left: 50px;
+  padding-top: 20px;
+  display: none;
 }
 .maintabs a {
   color: #b9bad5;
@@ -465,19 +527,21 @@ img { max-width: 100%; }
   margin-right: 60px;
   font-size: 20px;
   text-transform: uppercase;
+  float: left;
 }
 .maintabs a:hover,
 .maintabs a.active {
   text-decoration: none;
-  color: #76c146;
+  color: #fff;
 }
-.maintabs a:hover span,
-.maintabs a.active span {
+.maintabs a:hover i,
+.maintabs a.active i {
   text-decoration: none;
-  border-color: #76c146;
+  border-color: #fff;
+  color: #fff;
 }
 
-.maintabs a span {
+.maintabs a i {
   display: inline-block;
   margin-right: 10px;
   width: 50px;
@@ -487,6 +551,19 @@ img { max-width: 100%; }
   text-align: center;
   border-radius: 100%;
   font-size: 28px;
+  font-style: normal;
+}
+.maintabs a span {
+  display: inline-block;
+}
+.navbar-header .maintabs {
+  display: block;
+  padding-top: 0;
+  padding-left: 15px;
+}
+.navbar-header .maintabs a {
+  margin-right: 0;
+  color: #fff;
 }
 
 .middPanel .edit.infolist {
@@ -498,8 +575,16 @@ img { max-width: 100%; }
   margin-bottom: 10px;
   text-align: right;
 }
-
-
+.profileMenu .dropdown-menu {
+  min-width: 200px;
+  border-radius: 0;
+  margin-top: 20px; 
+}
+.profileMenu .dropdown-menu > .active > a, 
+.profileMenu .dropdown-menu > .active > a:focus, 
+.profileMenu .dropdown-menu > .active > a:hover {
+  background: #798c9d;
+}
 
 /*checklist*/
 .viewWrapper {
@@ -691,6 +776,7 @@ img { max-width: 100%; }
 }
 .addDealsWrapper {
   overflow-x: scroll;
+  padding-bottom: 20px;
 }
 .addDealsWrapper .screeningPanel {
   width: 275px;
@@ -722,5 +808,10 @@ img { max-width: 100%; }
   border-radius: 8px;
 }
 .overflowWrapper {
-  width: 1500px;
+  width: 5000px;
+}
+.newDeailbtn {
+  text-align: right;
+  padding: 2px 0px 0 15px;
+  float: right;
 }
