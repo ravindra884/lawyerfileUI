@@ -1218,6 +1218,7 @@ input[type="text"], select, textarea {
   padding: 15px 0 15px 60px;
   position: relative;
   color: #666;
+  min-height: 75px;
 }
 .userContactlist .list li:hover,
 .userContactlist .list li.active {
@@ -1322,7 +1323,7 @@ input[type="text"], select, textarea {
   padding: 0 10px 0 0;
   margin: 0;
   list-style: none;
-  height: 365px;
+  height: 348px;
   overflow-y: auto;
 }
 .messageContainer ul li {
