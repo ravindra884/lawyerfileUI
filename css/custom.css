@@ -864,7 +864,7 @@ img { max-width: 100%; }
   border-radius: 8px;
 }
 .overflowWrapper {
-  width: 1500px;
+  width: 5000px;
 }
 .newDeailbtn {
   text-align: right;
@@ -1030,12 +1030,12 @@ input[type="text"], select, textarea {
 }
 .existingChecklist dl dt {
   float: left;
-  width: 70%;
+  width: 50%;
   font-size: 16px;
   padding-left: 10px;
 }
 .existingChecklist dl dd {
-  margin-left: 70%;
+  margin-left: 50%;
   text-align: right;
 }
 .existingChecklist dl dd a {
