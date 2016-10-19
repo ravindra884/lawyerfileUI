@@ -1319,7 +1319,7 @@ input[type="text"], select, textarea {
   background: #edf0f2;
 }
 .messageContainer ul {
-  padding: 0;
+  padding: 0 10px 0 0;
   margin: 0;
   list-style: none;
   height: 365px;
@@ -1377,7 +1377,7 @@ input[type="text"], select, textarea {
   background: transparent;
   padding: 7px;
   border: 0;
-  color: #ccc;
+  color: #77c045;
   float: right;
 }
 .notify {
@@ -1388,4 +1388,58 @@ input[type="text"], select, textarea {
   right: 40px;
   border-radius: 100%;
   background: green;
+}
+
+#chats .messageContainer {
+  padding: 20px;
+  background: #fff;
+  border: solid 1px #ccc;
+}
+#chats .innertab li {
+  width: 33%;
+}
+#chats .innertab li label {
+  width: 30px;
+  height: 30px;
+  border: solid 2px #ccc;
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  color: #ccc;
+  font-size: 16px;
+}
+#chats .innertab li label sup {
+  font-size: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff0000;
+  color: #fff; 
+  line-height: 10px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+#chats .innertab li label.active {
+  border-color: #77c045;
+  color: #77c045;
+}
+#chats .messageContainer ul {
+  height: 295px;
+}
+#chats .messageContainer ul li.self {
+  text-align: right;
+  padding: 15px 65px 10px 0;
+}
+#chats .messageContainer ul li.self .avatar {
+  right: 0;
+  left: auto;
+}
+#chats .messageContainer ul li.self span {
+  width: auto;
+}
+#chats .messageContainer ul li.self small {
+  margin-left: 20px;
 }
