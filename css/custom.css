@@ -1210,6 +1210,7 @@ input[type="text"], select, textarea {
   display: block;
   padding: 0 20px;
   border-bottom: solid 1px #ddd;
+  position: relative;
 }
 .userContactlist .list a {
   display: block;
@@ -1252,10 +1253,11 @@ input[type="text"], select, textarea {
   font-size: 20px;
 }
 .userContactlist .list a .fa-chevron-right {
-  float: right;
   font-size: 16px;
-  line-height: 50px;
   visibility: hidden;
+  position: absolute;
+  top: 45%;
+  right: 0;
 }
 .userContactlist .list li.active .fa-chevron-right,
 .userContactlist .list li:hover .fa-chevron-right  {
@@ -1377,4 +1379,13 @@ input[type="text"], select, textarea {
   border: 0;
   color: #ccc;
   float: right;
+}
+.notify {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 45%;
+  right: 40px;
+  border-radius: 100%;
+  background: green;
 }
