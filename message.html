@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>LawyerFileApp</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap theme CSS -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if gte IE 9]<style type="text/css">
+        .gradient {filter: none;}
+    </style><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <!-- Header Start-->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="javascript:;" class="navbar-brand">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="maintabs">
+            <a href="javascript:;" class="purchase active"><span><i>P</i>Purchase</span></a>
+          </div>
+        </div>
+       <!--  <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="dashboard.html" >Dashboard</a></li>
+            <li><a href="index.html" >Deals</a></li>
+            <li><a href="javascript:;">Peoples</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </div> --><!--/.nav-collapse -->
+        
+        <div class="dropdown profileMenu">
+          <a id="dLabel" data-target="#" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="avatar"><img src="img/avatar.jpg" alt="img/avatar.jpg"></i>
+            <span>
+              <small>FirstName</small>
+              <strong>LongLastName </strong>  
+            </span>            
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dLabel">
+            <li class="active"><a href="dashboard.html" >Dashboard</a></li>
+            <li><a href="index.html" >Deals</a></li>
+            <li><a href="javascript:;">Peoples</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+        <a href="javascript:;" class="message">
+          <sup>12</sup>
+          <i aria-hidden="true" class="fa fa-comments-o"></i>
+        </a>
+        <div class="maintabs menu">
+            <a href="javascript:;" class="purchase" id="purchase"><span><i>P</i>Purchase</span></a>
+            <a href="javascript:;" class="sale" id="sale"><span><i>S</i>Sale</span></a>
+            <a href="javascript:;" class="mortgage" id="mortgage"><span><i>M</i>Mortgage</span></a>
+            <a href="javascript:;" class="transfer" id="transfer"><span><i>T</i>Title transfer</span></a>
+        </div>
+
+      </div>
+    </nav>
+  </header>  
+  <!-- Header end-->
+   
+
+  <!-- midd section -->
+  <section class="wrapper middWrapper">
+    <div class="container">
+      <div class="messageWrapper">
+        <div class="col-lg-4">
+          <div class="userContactlist">
+            <div class="head clearfix">
+              <i aria-hidden="true" class="fa fa-envelope-o"></i> Messages
+              <div class="option">
+                <a href="javascript:;" id="option1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="option1">
+                  <li><a href="javascript:;">Settings</a></li>
+                  <li><a href="javascript:;">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="searchMessage clearfix">
+              <input type="text" placeholder="Search Message" name="" class="form-control">
+              <button class="searchBtn"><i aria-hidden="true" class="fa fa-search"></i></button>
+            </div>
+            <ul class="list">
+              <li>
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Jason Bourne</span>
+                  <p>Client</p>
+                  <small class="badge">18P0034</small>  
+                </a>
+              </li>
+              <li class="active">
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Mike Duffy</span>
+                  <p>Client</p>  
+                  <small class="badge">18P0034</small>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Conrad black</span>
+                  <span>Mike black</span>
+                  <span>Clin black</span>
+                  <!-- <p>Realtor</p>   -->
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Jason Bourne</span>
+                  <p>Client</p>  
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Mike Duffy</span>
+                  <p>Client</p>  
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                  <i aria-hidden="true" class="fa fa-chevron-right"></i>
+                  <span>Conrad black</span>
+                  <p>Realtor</p>  
+                </a>
+              </li>
+            </ul>
+            <div class="footer">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="messageSection">
+            <div class="head clearfix">
+              Mike Duffy <a class="badge">18P0034</a>
+               <div class="option">
+                <a href="javascript:;" id="option1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="option1">
+                  <li><a href="javascript:;">Settings</a></li>
+                  <li><a href="javascript:;">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="messageContainer">
+              <ul>
+                <li>
+                  <i class="avatar"><img src="img/avatar.jpg" alt=""></i>
+                  <span>Mike Duffy</span>
+                  <small>3:32 pm</small>
+                  <div class="chat">
+                    <p>Play the hits! Some of our favorite editorial features of the last few years with
+  Miguel, Kindness, Toro y Moi, Future Islands, Lee Fields.</p>
+                  </div>
+                </li>
+                 <li>
+                  <i class="avatar"><img src="img/avatar.jpg" alt=""></i>
+                  <span>Yuliya Petrova</span>
+                  <small>3:55 pm</small>
+                  <div class="chat">
+                    <p>Play the hits! Some of our favorite editorial features of the last few years with
+  Miguel, Kindness, Toro y Moi, Future Islands, Lee Fields.</p>
+                  </div>
+                </li>
+                 <li>
+                  <i class="avatar"><img src="img/avatar.jpg" alt=""></i>
+                  <span>Mike Duffy</span>
+                  <small>3:32 pm</small>
+                  <div class="chat">
+                    <p>Play the hits! Some of our favorite editorial features of the last few years with
+  Miguel, Kindness, Toro y Moi, Future Islands, Lee Fields.</p>
+                  </div>
+                </li>
+                 <li>
+                  <i class="avatar"><img src="img/avatar.jpg" alt=""></i>
+                  <span>Mike Duffy</span>
+                  <small>3:32 pm</small>
+                  <div class="chat">
+                    <p>Play the hits! Some of our favorite editorial features of the last few years with
+  Miguel, Kindness, Toro y Moi, Future Islands, Lee Fields.</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="reply clearfix">
+                <input type="text" class="form-control" name="" placeholder="Reply...">
+                <button class="sendBtn"><i aria-hidden="true" class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+    </div>
+  </section>
+  <!-- midd section -->
+
+
+  <!-- multistep form -->
+  <div class="blackoverlay"></div>
+  <form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Deal Info</li>
+      <li>Purchaser</li>
+      <li>Real State Agent</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Deal Info</h2>
+      <!-- <h3 class="fs-subtitle">This is step 1</h3> -->
+      <div class="form-group">
+        <input type="text" name="" placeholder="Deal Number" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Type of Transaction" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Property Address" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Street Name" class="" />
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+      <input type="text" name="" placeholder="City" class=""/>
+      <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Province" class=""/>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group inputSmall">
+        <input type="text" name="" placeholder="Postal Code" class=""/>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Closing Date DD/MM/YYY" />
+      </div>
+
+      <div class="form-group clearfix">
+        <span>First Time Buyer</span>
+        <div class="radio-inline">
+          <input type="radio" name="optionsRadios" id="yes" value="option1"> 
+          <label for="yes">yes</label> 
+        </div>
+        <div class="radio-inline">
+          <input type="radio" name="optionsRadios" id="no" value="option2"> 
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <div class="form-group inputSmall">
+        <select class="">
+          <option value="1">Type of Ownership</option>
+          <option value="2">Joint Tenancy</option>
+          <option value="3">Tenancy in common</option>
+        </select>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+
+      <div class="form-group inputSmall">
+        <select class="">
+          <option value="1">Property Type</option>
+          <option value="2">Investment</option>
+          <option value="3">Matrimonial Home</option>
+        </select>
+        <p class="error">Lorem ipsum doller is amet!</p>
+      </div>
+
+       <div class="form-group clearfix">
+        <span>Urgent Deal</span>
+        <div class="checkbox-inline">
+          <input type="checkbox" name="" id="urgent_deal" value=""> 
+          <label for="urgent_deal"></label> 
+        </div>
+        
+      </div>
+
+     <input type="button" name="" class="next action-button" value="Next" />
+      
+    </fieldset>
+
+
+    <fieldset>
+      <h2 class="fs-title">Purchaser </h2>
+      <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="First Name" class="inputexSmall" />
+        <input type="text" name="middlename" placeholder="Middle Name" class="inputexSmall"/>
+        <input type="text" name="lastname" placeholder="Last Name" class="inputexSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="dateofbirth" placeholder="Date Of borth" class="inputSmall"/>
+        <input type="text" name="email" placeholder="Email" class="inputSmall"/>
+      </div>
+      <input type="text" name="phonenumber" placeholder="Phone Number" class=""/>
+
+      <a href="javascript:;" class="addMore">+ Add More Numbers</a>
+
+      <input type="text" name="" placeholder="Current Address" />
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Street Name" class="inputSmall" />
+        <input type="text" name="" placeholder="City" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Province" class="inputSmall"/>
+        <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
+      </div>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Real Estate Agent</h2>
+      <!-- <h3 class="fs-subtitle">We will never sell it</h3> -->
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="First Name" class="inputexSmall" />
+        <input type="text" name="middlename" placeholder="Middle Name" class="inputexSmall"/>
+        <input type="text" name="lastname" placeholder="Last Name" class="inputexSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number#1" class="inputSmall"/>
+        <input type="text" name="" placeholder="Phone Number#2" class="inputSmall"/>
+      </div>
+      <h2 class="fs-title">Real Estate Brokerage</h2>
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="Brokerage Name" class="" />
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Street Name" class="inputSmall" />
+        <input type="text" name="" placeholder="City" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Province" class="inputSmall"/>
+        <input type="text" name="" placeholder="Postal Code" class="inputSmall"/>
+      </div>
+      <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number" class="inputSmall"/>
+        <input type="text" name="" placeholder="Fax Number" class="inputSmall"/>
+      </div>
+      <h2 class="fs-title">Mortgage Agent</h2>
+       <div class="form-group clearfix">
+        <input type="text" name="firstname" placeholder="First Name" class="inputSmall" />
+        <input type="text" name="lastname" placeholder="Last Name" class="inputSmall"/>
+      </div>
+       <div class="form-group clearfix">
+        <input type="text" name="" placeholder="Phone Number#1" class="inputSmall"/>
+        <input type="text" name="" placeholder="Phone Number#2" class="inputSmall"/>
+      </div>
+
+
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="submit" class="submit action-button" value="Submit" />
+    </fieldset>
+  </form>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+   
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- custom  -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
